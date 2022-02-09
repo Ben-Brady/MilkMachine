@@ -70,5 +70,5 @@ client.on("guildMemberAdd", (member) => {
     member.setNickname("The Milk Machine", "Allign with current milk policy");
     member.roles.add(MILK_ROLE, "Allign with current milk policy");
 });
-
-client.login("OTE1OTcxMjM0OTUxNDk1NzIw.YajWsA.D8XL_tf3BiYBb6zPL_QBQ7DF9So");
+// use a .env file to put your token into not directly into the file and don't upload your tokens to github 
+client.login("TOKEN_HERE");

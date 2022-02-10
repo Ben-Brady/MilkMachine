@@ -1,5 +1,5 @@
 const { Client, Intents } = require("discord.js");
-const { MILK_ROLE,MILK_CHANNEL } = require("./config.json");
+const { MILK_ROLE,MILK_CHANNEL,TOKEN } = require("./config.json");
 
 const allIntents = new Intents(32767);
 const client = new Client({ intents: [allIntents] });
@@ -71,4 +71,4 @@ client.on("guildMemberAdd", (member) => {
     member.roles.add(MILK_ROLE, "Allign with current milk policy");
 });
 
-client.login("OTE1OTcxMjM0OTUxNDk1NzIw.YajWsA.D8XL_tf3BiYBb6zPL_QBQ7DF9So");
+client.login(TOKEN);
